@@ -6,7 +6,7 @@ PgSilo is a new PostgreSQL extension that aim to provide better security and iso
 
 pgSilo is still in active development and there is still a lot to do but I decided to share it at the early stage to get feedback and contribution of course . Here is a glimpse of what the actual Pre-APLHA release can do :
 
-
+![alt text](https://mahmoudhatem.files.wordpress.com/2020/12/capture.png)
 
 Essentially, at this stage pgsilo allow back-end process connected to different silo (database) to have a different view of the file system layout, which aim to provide fs access control and isolation. Pgsilo rely on Linux namespace for that. The back-end process are bound to different child user and mount namespaces. The new FS layout is constructed using a combination of Bind mount and pivot root.
 
